@@ -1,14 +1,15 @@
-DROP DATABASE IF EXISTS bamazon_db;
-CREATE DATABASE bamazon_db;
+DROP DATABASE IF EXISTS seinfeld_db;
+CREATE DATABASE seinfeld_db;
 
-USE bamazon_db;
+USE seinfeld_db;
 
-CREATE TABLE products (
+ -- id (PRIMARY KEY AUTO_INCREMENT int), name (varchar), coolness_points (int), and attitude (varchar).
+
+CREATE TABLE actors (
   id INT NOT NULL AUTO_INCREMENT,
-  product_name VARCHAR(50) NOT NULL,
-  department_name VARCHAR(50) ,
-  price DECIMAL(10.2) NOT NULL,
-  stock_qty INT NOT NULL,
+  name VARCHAR(50) NOT NULL,
+  coolness_points INT NOT NULL,
+  attitude VARCHAR(50) NOT NULL,
   PRIMARY KEY (id)
 );
 
